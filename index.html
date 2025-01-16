@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Happy Birthday</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background: linear-gradient(135deg, rgba(255, 85, 85, 0.9), rgba(170, 50, 90, 0.9), rgba(120, 30, 120, 0.9));
+            overflow-x: hidden;
+        }
+
+        .hero {
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            background-image: url('./img/collection.jpg'); /* Replace with your image URL */
+            background-size: cover;
+            background-position: center;
+            color: #222;
+            text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.8);
+            position: relative;
+            overflow: hidden;
+            backdrop-filter: blur(5px);
+        }
+
+        .hero h1 {
+            font-size: 3.5em;
+            color: #e76585;
+            animation: fadeIn 2s ease-in-out;
+        }
+
+        .hero p {
+            font-size: 1.8em;
+            color: #e76483;
+            animation: fadeIn 3s ease-in-out;
+            font-weight: 700;
+        }
+
+        .hero button {
+            margin-top: 20px;
+            padding: 15px 30px;
+            font-size: 1.2em;
+            color: white;
+            background: #AA2E45;
+            border: none;
+            border-radius: 25px;
+            cursor: pointer;
+            animation: fadeIn 4s ease-in-out;
+            transition: transform 0.3s;
+        }
+
+        .hero button:hover {
+            transform: scale(1.1);
+            background: #8C1E36;
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+            to {
+                opacity: 1;
+            }
+        }
+
+        .balloon {
+            position: absolute;
+            width: 60px;
+            height: 80px;
+            background: radial-gradient(circle at 50% 30%, #AA2E45, #8C1E36);
+            border-radius: 50%;
+            animation: floatUp 6s infinite;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+        }
+
+        .balloon:before {
+            content: '';
+            position: absolute;
+            bottom: -10px;
+            left: 50%;
+            width: 2px;
+            height: 25px;
+            background: #8C1E36;
+        }
+
+        .balloon:nth-child(1) {
+            left: 20%;
+            animation-delay: 0s;
+        }
+
+        .balloon:nth-child(2) {
+            left: 50%;
+            animation-delay: 1s;
+        }
+
+        .balloon:nth-child(3) {
+            left: 80%;
+            animation-delay: 2s;
+        }
+
+        @keyframes floatUp {
+            0% {
+                transform: translateY(100vh);
+                opacity: 0.9;
+            }
+            100% {
+                transform: translateY(-10%);
+                opacity: 0;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="hero">
+        <div class="balloon"></div>
+        <div class="balloon"></div>
+        <div class="balloon"></div>
+        <h1>Happy Birthday, My Pasandida Mard!❤️</h1>
+        <p>Many Many Happy Returns of the Day CUTUUUUUUUUUU<3333333.</p>
+        <button onclick="window.location.href='memories.html'">View More Memories</button>
+    </div>
+</body>
+</html>
