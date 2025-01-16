@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Special Message</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background: linear-gradient(135deg, #FFDDE1, #FF99AC);
+            background: url('./img/pexels-karolina-grabowska-4041287.jpg');
+            background-position: center;
+            background-size: cover;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            overflow: hidden;
+            color: #333;
+            text-align: center;
+        }
+
+        .message-container {
+            max-width: 600px;
+            background-color: #fff;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+            position: relative;
+            z-index: 10;
+        }
+
+        .message-container h1 {
+            margin-bottom: 20px;
+        }
+
+        .message-container p {
+            font-size: 0.9em;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            line-height: 1.6;
+        }
+
+        .back-button {
+            margin-top: 20px;
+            padding: 10px 20px;
+            font-size: 1em;
+            color: white;
+            background: rgb(128, 3, 3);
+            border: none;
+            border-radius: 20px;
+            cursor: pointer;
+            transition: transform 0.3s;
+        }
+
+        .back-button:hover {
+            transform: scale(1.1);
+            background: #881627;
+        }
+
+        /* Falling rose petals */
+        .petal {
+            position: absolute;
+            width: 20px;
+            height: 20px;
+            background: url('https://i.imgur.com/IS1BDnE.png') no-repeat center/contain;
+            animation: fall linear infinite;
+        }
+
+        @keyframes fall {
+            0% {
+                transform: translateY(-100vh) rotate(0deg);
+                opacity: 1;
+            }
+            100% {
+                transform: translateY(100vh) rotate(360deg);
+                opacity: 0;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="message-container">
+        <h1>Special Message for My Special One❤️</h1>
+        <p>
+            This is very special day for me baby because it is your birthday, I know aapko ye din itna bda nhi lgta hai 
+            but baby this is VERY SPECIAL FOR ME. Happy Birthday My Love and My Sweetu and Cutu sa Kuchchu Puchchu 🥹🎂. I wish mai ye birthday bhi aapka sth 
+            mna skti apke, apne last time jese but Okay! I will give you virtuall huggieessss and so much loveeeeeee🫂🫂🫂🫂. This is 
+            your second birthday on which we are together and I love being called SHANTANU'S GIRLFRIEND. I know there are lots of 
+            jhagda, misunderstandings and gussa but baby our love had defeated all these. I know you love me more and you also know 
+            that I love you too unconditionally💗 aur isi vajah se hum sath bhi hai. Baby you mean so much for me... matlab soooooo mmucchhhhhhhh
+            and I also want me to be your that happy place where you feel relaxed and peacefull(hasna allowed nahi hai thikenaa😂...mana ki mai kaleshi hu but ittu se nakhre is acceptable😂, haan thike kam bhi krdungi😘),
+            that is why I will be your biggest support system and will always grow with you together untill our end aur toh sabh sambhal lega bhyii.. thodi si aapki bchchi hu toh ky hogya
+            sambhalega fir bhi bhyii🤭. chlo chlo meri speech ko wind up krte hai or mai meri dill ki bat boli hi deti hu aaj is shubh avasar pr 🤭 
+            SO MR SHANTANU I AM DEEPLY IN LOVE WITH YOU AND WILL NEVER LEAVE YOUR HAND, NEVER!❤️ 
+            Happy Birthday Once Again to The Most Handsome Man of the World🍷 for Me toh 😘.
+
+        </p>
+        <button class="back-button" onclick="window.location.href='memories.html'">Back to Memories</button>
+    </div>
+
+</body>
+</html>

@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Memories</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background: linear-gradient(135deg, #FFDDE1, #ffffff);
+            overflow-x: hidden;
+        }
+
+        .header {
+            background: #7e011a;
+            color: white;
+            text-align: center;
+            padding: 20px 0;
+            position: fixed;
+            top: 0;
+            width: 100%;
+            z-index: 10;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+        }
+
+        .header h1 {
+            margin: 0;
+            font-size: 2.5em;
+        }
+
+        .content {
+            padding: 100px 10% 50px;
+            text-align: center;
+        }
+
+        .content h2 {
+            color: #333;
+            margin-bottom: 5px;
+            font-size: 1.8em;
+        }
+
+        .content p{
+            color: #555;
+            margin-bottom: 30px;
+            font-weight: 500;
+        }
+
+        .content .photos {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 15px;
+            justify-content: center;
+        }
+
+        .content .photo-container {
+            position: relative;
+            width: 300px;
+            height: 300px;
+            border-radius: 15px;
+            overflow: hidden;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+        }
+
+        .content .photo-container img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: transform 0.5s;
+        }
+
+        .content .photo-container img:hover {
+            transform: scale(1.1);
+        }
+
+        .content .photo-container .overlay {
+            position: absolute;
+            bottom: -100%;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.6);
+            color: white;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            font-size: 1em;
+            font-weight: bold;
+            transition: bottom 0.5s ease-in-out;
+            padding: 10px;
+            /* border: #7e011a 3px solid; */
+        }
+        .content .photo-container .overlay p{
+            color: #ffffff;
+            font-size: 1em;
+            font-weight: 600;
+            padding: 20px;
+        }
+
+        .content .photo-container:hover .overlay {
+            bottom: 0;
+        }
+
+        .back-button {
+            margin-top: 30px;
+        }
+
+        .back-button button {
+            padding: 12px 24px;
+            font-size: 1.2em;
+            color: white;
+            background: #7e011a;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background 0.3s ease-in-out;
+        }
+
+        .back-button button:hover {
+            background: #b91c3c;
+        }
+    </style>
+</head>
+<body>
+    
+    
+    <div class="header">
+        <h1>Our Sweet Memories🤍</h1>
+    </div>
+    <div class="content">
+        <h2>Relive Our Special Moments</h2>
+        <p>(Thodi si quality gat gayi hai but we can manage😘)</p>
+        <div class="photos">
+            <!-- Replace "Memory X" with your captions and "YOUR_IMAGE_URL" with your image URLs -->
+            <div class="photo-container">
+                <img src="./img/m1.jpg" alt="Memory 1">
+                <div class="overlay"><p>The very first move towards us🙈</p></div>
+            </div>
+            <div class="photo-container">
+                <img src="./img/m2.jpg" alt="Memory 2">
+                <div class="overlay"><p>Our twinning day!!!</p></div>
+            </div>
+            <div class="photo-container">
+                <img src="./img/m3.jpg" alt="Memory 3">
+                <div class="overlay"><p>Sabse pehla din aapka hath thamne ka🥰</p></div>
+            </div>
+            <div class="photo-container">
+                <img src="./img/m4.jpg" alt="Memory 4">
+                <div class="overlay"><p>And apni first date😍</p></div>
+            </div>
+            <div class="photo-container">
+                <img src="./img/m5.jpg" alt="Memory 5">
+                <div class="overlay"><p>mere birthday boy ka birthday of 2023😘</p></div>
+            </div>
+            <div class="photo-container">
+                <img src="./img/m6.jpg" alt="Memory 6">
+                <div class="overlay"><p>or mere baby ka one of the fav photo<3 (but isme mujhe dekho🫣) </p></div>
+            </div>
+            <div class="photo-container">
+                <img src="./img/m7.jpg" alt="Memory 7">
+                <div class="overlay"><p>I love this cutu boy so muchh❤️... yaarrrr khaa jauu 😘</p></div>
+            </div>
+            <div class="photo-container">
+                <img src="./img/m8.jpg" alt="Memory 8">
+                <div class="overlay"><p>bakchodi nahi rukni chaiye😂... happyy birthdayyyy my favourite person💕</p></div>
+            </div>
+            <div class="photo-container">
+                <img src="./img/m9.jpg" alt="Memory 9">
+                <div class="overlay"><p>🥹I feel safest in your arms baby..</p></div>
+            </div>
+            <div class="photo-container">
+                <img src="./img/m10.jpg" alt="Memory 10">
+                <div class="overlay"><p>ahmm.. ahmm.. 🌚 our first time ;) </p></div>
+            </div>
+            <div class="photo-container">
+                <img src="./img/m11.jpg" alt="Memory 11">
+                <div class="overlay"><p>I will never leave this hand🫀</p></div>
+            </div>
+            <div class="photo-container">
+                <img src="./img/m12.jpg" alt="Memory 12">
+                <div class="overlay"><p>bubu pehliiii holiiiii😍😍😍</p></div>
+            </div>
+            <div class="photo-container">
+                <img src="./img/m13.jpg" alt="Memory 13">
+                <div class="overlay"><p>haan toh apne vc rukne nahi chaiye(pareshan krna mera haq h🐥)</p></div>
+            </div>
+            <div class="photo-container">
+                <img src="./img/m14.jpg" alt="Memory 14">
+                <div class="overlay"><p>happy birthday mere kanhaiya💗</p></div>
+            </div>
+            <div class="photo-container">
+                <img src="./img/m15.jpg" alt="Memory 15">
+                <div class="overlay"><p>mujhe ye photo apna achha lgta haii.. mtlb Bubu ki chhotisi Dudu is feeling so muchh comfortable in his arms🤭</p></div>
+            </div>
+            <div class="photo-container">
+                <img src="./img/m16.jpg" alt="Memory 16">
+                <div class="overlay"><p>wooahhooo bubu twinning part 2 but is br coincidently nahi tha.. hihihi😁</p></div>
+            </div>
+            <div class="photo-container">
+                <img src="./img/m17.jpg" alt="Memory 17">
+                <div class="overlay"><p>okay we had successfully passed 1 year together... and celebrating your another birthday together.. ahmm not together physically but we are by our souls, right?🙈❤️</p></div>
+            </div>
+            <div class="photo-container">
+                <img src="./img/m18.jpg" alt="Memory 18">
+                <div class="overlay"><p>we the models.. bubu dance k alava modelling bhi krni chaiye na apn ko... I lovvveeee youuuuu my home❤️🫀</p></div>
+            </div>
+        </div>
+
+        <div class="back-button">
+            <button onclick="window.location.href='message.html'">Read Special Message</button>
+        </div>
+    </div>
+</body>
+</html>
